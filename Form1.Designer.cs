@@ -37,6 +37,9 @@ namespace NewClassForm1
             this.heightLabel = new System.Windows.Forms.Label();
             this.massInKgLabel = new System.Windows.Forms.Label();
             this.addToListButton = new System.Windows.Forms.Button();
+            this.stonesLabel = new System.Windows.Forms.Label();
+            this.stonesTextBox = new System.Windows.Forms.TextBox();
+            this.convertDataButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dataListBox
@@ -106,11 +109,41 @@ namespace NewClassForm1
             this.addToListButton.UseVisualStyleBackColor = true;
             this.addToListButton.Click += new System.EventHandler(this.addToListButton_Click);
             // 
+            // stonesLabel
+            // 
+            this.stonesLabel.AutoSize = true;
+            this.stonesLabel.Location = new System.Drawing.Point(32, 237);
+            this.stonesLabel.Name = "stonesLabel";
+            this.stonesLabel.Size = new System.Drawing.Size(84, 15);
+            this.stonesLabel.TabIndex = 8;
+            this.stonesLabel.Text = "Mass in stones";
+            // 
+            // stonesTextBox
+            // 
+            this.stonesTextBox.Location = new System.Drawing.Point(149, 237);
+            this.stonesTextBox.Name = "stonesTextBox";
+            this.stonesTextBox.Size = new System.Drawing.Size(58, 23);
+            this.stonesTextBox.TabIndex = 9;
+            // 
+            // convertDataButton
+            // 
+            this.convertDataButton.Location = new System.Drawing.Point(580, 330);
+            this.convertDataButton.Name = "convertDataButton";
+            this.convertDataButton.Size = new System.Drawing.Size(141, 35);
+            this.convertDataButton.TabIndex = 10;
+            this.convertDataButton.Text = "Convert Data";
+            this.convertDataButton.UseVisualStyleBackColor = true;
+            this.convertDataButton.Click += new System.EventHandler(this.convertDataButton_Click);
+            this.convertDataButton.Enabled = false;
+            // 
             // PersonDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.convertDataButton);
+            this.Controls.Add(this.stonesTextBox);
+            this.Controls.Add(this.stonesLabel);
             this.Controls.Add(this.addToListButton);
             this.Controls.Add(this.massInKgLabel);
             this.Controls.Add(this.heightLabel);
@@ -136,6 +169,9 @@ namespace NewClassForm1
         private System.Windows.Forms.Label heightLabel;
         private System.Windows.Forms.Label massInKgLabel;
         private System.Windows.Forms.Button addToListButton;
+        private System.Windows.Forms.Label stonesLabel;
+        private System.Windows.Forms.TextBox stonesTextBox;
+        private System.Windows.Forms.Button convertDataButton;
     }
 }
 
